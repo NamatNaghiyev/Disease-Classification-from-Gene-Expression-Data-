@@ -18,7 +18,8 @@ from sklearn.impute import SimpleImputer  # For handling missing values by imput
 
 
 # Loading the dataset from a CSV file into a pandas DataFrame
-df = pd.read_csv(r'C:\Users\PC\OneDrive\İş masası\AI\Tools1\data (2).csv')
+df = pd.read_csv('data/data.csv')
+
 
 # Removing any columns that have names starting with 'Unnamed'
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
